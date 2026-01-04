@@ -693,5 +693,3 @@ MFlow aims to:
 ---
 
 **MFlow** - *Where creativity meets computation*
-
-Created with ❤️ by Mehdi and contributors
