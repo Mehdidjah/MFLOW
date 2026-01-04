@@ -1,0 +1,175 @@
+// Token types for MFlow language
+export enum TokenType {
+  // Literals
+  NUMBER = 'NUMBER',
+  STRING = 'STRING',
+  COLOR = 'COLOR',
+  IDENTIFIER = 'IDENTIFIER',
+
+  // Keywords
+  LET = 'LET',
+  FN = 'FN',
+  RETURN = 'RETURN',
+  IF = 'IF',
+  ELSE = 'ELSE',
+  REPEAT = 'REPEAT',
+  WHILE = 'WHILE',
+  FOR = 'FOR',
+  ANIMATE = 'ANIMATE',
+  SCENE = 'SCENE',
+  IMPORT = 'IMPORT',
+  FROM = 'FROM',
+  TRUE = 'TRUE',
+  FALSE = 'FALSE',
+  NULL = 'NULL',
+
+  // Shape keywords
+  CIRCLE = 'CIRCLE',
+  RECT = 'RECT',
+  LINE = 'LINE',
+  TRIANGLE = 'TRIANGLE',
+  POLYGON = 'POLYGON',
+  ELLIPSE = 'ELLIPSE',
+  ARC = 'ARC',
+  TEXT = 'TEXT',
+
+  // Animation keywords
+  MOVE = 'MOVE',
+  ROTATE = 'ROTATE',
+  SCALE = 'SCALE',
+  FADE = 'FADE',
+  BOUNCE = 'BOUNCE',
+  WAVE = 'WAVE',
+  ORBIT = 'ORBIT',
+  PULSE = 'PULSE',
+  WOBBLE = 'WOBBLE',
+  SPRING = 'SPRING',
+
+  // Direction keywords
+  UP = 'UP',
+  DOWN = 'DOWN',
+  LEFT = 'LEFT',
+  RIGHT = 'RIGHT',
+
+  // Properties
+  AT = 'AT',
+  SIZE = 'SIZE',
+  WIDTH = 'WIDTH',
+  HEIGHT = 'HEIGHT',
+  COLOR_PROP = 'COLOR_PROP',
+  SPEED = 'SPEED',
+  FONT = 'FONT',
+  STROKE = 'STROKE',
+  STROKE_WIDTH = 'STROKE_WIDTH',
+  RADIUS = 'RADIUS',
+  START_ANGLE = 'START_ANGLE',
+  END_ANGLE = 'END_ANGLE',
+  SIDES = 'SIDES',
+
+  // Event keywords
+  ON_CLICK = 'ON_CLICK',
+  ON_MOVE = 'ON_MOVE',
+  ON_KEY = 'ON_KEY',
+  MOUSE_X = 'MOUSE_X',
+  MOUSE_Y = 'MOUSE_Y',
+  TIME = 'TIME',
+  FRAME_COUNT = 'FRAME_COUNT',
+
+  // Array/Object operators
+  LBRACKET = 'LBRACKET',
+  RBRACKET = 'RBRACKET',
+  COLON = 'COLON',
+
+  // Operators
+  PLUS = 'PLUS',
+  MINUS = 'MINUS',
+  MULTIPLY = 'MULTIPLY',
+  DIVIDE = 'DIVIDE',
+  MODULO = 'MODULO',
+  ASSIGN = 'ASSIGN',
+  EQUAL = 'EQUAL',
+  NOT_EQUAL = 'NOT_EQUAL',
+  LESS_THAN = 'LESS_THAN',
+  GREATER_THAN = 'GREATER_THAN',
+  LESS_EQUAL = 'LESS_EQUAL',
+  GREATER_EQUAL = 'GREATER_EQUAL',
+
+  // Delimiters
+  LPAREN = 'LPAREN',
+  RPAREN = 'RPAREN',
+  LBRACE = 'LBRACE',
+  RBRACE = 'RBRACE',
+  COMMA = 'COMMA',
+  DOT = 'DOT',
+  NEWLINE = 'NEWLINE',
+
+  // Special
+  EOF = 'EOF',
+  ILLEGAL = 'ILLEGAL',
+}
+
+export interface Token {
+  type: TokenType;
+  value: string;
+  line: number;
+  column: number;
+}
+
+export const KEYWORDS: Record<string, TokenType> = {
+  let: TokenType.LET,
+  fn: TokenType.FN,
+  return: TokenType.RETURN,
+  if: TokenType.IF,
+  else: TokenType.ELSE,
+  repeat: TokenType.REPEAT,
+  while: TokenType.WHILE,
+  for: TokenType.FOR,
+  animate: TokenType.ANIMATE,
+  scene: TokenType.SCENE,
+  import: TokenType.IMPORT,
+  from: TokenType.FROM,
+  true: TokenType.TRUE,
+  false: TokenType.FALSE,
+  null: TokenType.NULL,
+  circle: TokenType.CIRCLE,
+  rect: TokenType.RECT,
+  line: TokenType.LINE,
+  triangle: TokenType.TRIANGLE,
+  polygon: TokenType.POLYGON,
+  ellipse: TokenType.ELLIPSE,
+  arc: TokenType.ARC,
+  text: TokenType.TEXT,
+  move: TokenType.MOVE,
+  rotate: TokenType.ROTATE,
+  scale: TokenType.SCALE,
+  fade: TokenType.FADE,
+  bounce: TokenType.BOUNCE,
+  wave: TokenType.WAVE,
+  orbit: TokenType.ORBIT,
+  pulse: TokenType.PULSE,
+  wobble: TokenType.WOBBLE,
+  spring: TokenType.SPRING,
+  up: TokenType.UP,
+  down: TokenType.DOWN,
+  left: TokenType.LEFT,
+  right: TokenType.RIGHT,
+  at: TokenType.AT,
+  size: TokenType.SIZE,
+  width: TokenType.WIDTH,
+  height: TokenType.HEIGHT,
+  color: TokenType.COLOR_PROP,
+  speed: TokenType.SPEED,
+  font: TokenType.FONT,
+  stroke: TokenType.STROKE,
+  radius: TokenType.RADIUS,
+  sides: TokenType.SIDES,
+  startAngle: TokenType.START_ANGLE,
+  endAngle: TokenType.END_ANGLE,
+  onClick: TokenType.ON_CLICK,
+  onMove: TokenType.ON_MOVE,
+  onKey: TokenType.ON_KEY,
+  mouseX: TokenType.MOUSE_X,
+  mouseY: TokenType.MOUSE_Y,
+  time: TokenType.TIME,
+  frameCount: TokenType.FRAME_COUNT,
+};

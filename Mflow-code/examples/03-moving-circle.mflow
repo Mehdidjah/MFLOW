@@ -1,0 +1,10 @@
+// Example 3: Moving Circle
+// A circle that bounces across the screen
+
+// Start with a circle on the left
+circle at (50, 250) size 40 color #FF00FF
+
+// Move it to the right continuously
+animate {
+  move 3 right
+}

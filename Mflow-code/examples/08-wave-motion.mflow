@@ -1,0 +1,17 @@
+// Example 8: Wave Motion Pattern
+// Creates multiple circles that appear to move in a wave
+
+let y = 100
+repeat 5 {
+  circle at (100, y) size 25 color #00FFFF
+  circle at (250, y) size 25 color #FF00FF
+  circle at (400, y) size 25 color #FFFF00
+  let y = y + 80
+}
+
+// Animate with combined transformations
+animate {
+  move 1 right
+  move 0.5 down
+  rotate 0.5
+}

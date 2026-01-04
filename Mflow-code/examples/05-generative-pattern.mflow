@@ -1,0 +1,23 @@
+// Example 5: Generative Art Pattern
+// Complex rotating pattern with multiple shapes
+
+scene artwork {
+  // Background
+  rect at (250, 250) width 500 height 500 color #0F0F1E
+  
+  // Create a circular pattern of shapes
+  let angle = 0
+  repeat 12 {
+    circle at (250, 150) size 25 color #00FFFF
+    let angle = angle + 30
+  }
+  
+  // Central rotating element
+  rect at (250, 250) width 60 height 60 color #FF00FF
+  
+  // Animate the entire scene
+  animate {
+    rotate 1
+    scale 1.001
+  }
+}

@@ -1,0 +1,13 @@
+// Example 6: Function Usage
+// Demonstrates reusable functions for drawing patterns
+
+// Function to draw a star-like shape
+fn drawStar(x, y, color) {
+  circle at (x, y) size 30 color color
+  circle at (x, y) size 20 color #FFFFFF
+}
+
+// Use the function multiple times
+drawStar(150, 150, #00FFFF)
+drawStar(350, 150, #FF00FF)
+drawStar(250, 350, #FFFF00)

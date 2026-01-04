@@ -1,0 +1,11 @@
+// Example 2: Rotating Animation
+// A continuously rotating and scaling square
+
+// Draw a centered square
+rect at (250, 250) width 120 height 120 color #00FFFF
+
+// Animate with rotation and subtle scaling
+animate {
+  rotate 2
+  scale 1.002
+}

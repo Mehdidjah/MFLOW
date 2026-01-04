@@ -1,0 +1,14 @@
+// Example 1: Basic Shapes
+// This example demonstrates the fundamental shape primitives in MFlow
+
+// Draw a cyan circle
+circle at (150, 150) size 60 color #00FFFF
+
+// Draw a magenta rectangle
+rect at (350, 150) width 100 height 100 color #FF00FF
+
+// Draw a yellow triangle
+triangle (250, 300) (200, 400) (300, 400) color #FFFF00
+
+// Draw a white line
+line (100, 450) (400, 450) color #FFFFFF

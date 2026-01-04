@@ -1,0 +1,11 @@
+// Example 4: Color Gradient Pattern
+// Creates a horizontal line of colored circles
+
+let x = 50
+let y = 250
+
+// Create 8 circles in a row
+repeat 8 {
+  circle at (x, y) size 30 color #00FFFF
+  let x = x + 60
+}

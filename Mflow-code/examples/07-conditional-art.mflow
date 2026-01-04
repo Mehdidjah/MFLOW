@@ -1,0 +1,18 @@
+// Example 7: Conditional Rendering
+// Uses variables and conditions to create adaptive art
+
+let size = 80
+let centerX = 250
+let centerY = 250
+
+// Conditional shape rendering
+if size > 50 {
+  circle at (centerX, centerY) size size color #00FFFF
+} else {
+  rect at (centerX, centerY) width size height size color #FF00FF
+}
+
+// Animated rotation
+animate {
+  rotate 1.5
+}
